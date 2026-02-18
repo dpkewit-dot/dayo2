@@ -1,0 +1,31 @@
+jenkins install and jenkins plugin compleate 
+before install jenkins ::
+--java should have install :
+		--check java install or not :
+							sudo apt update
+							sudo apt install fontconfig openjdk-21-jre
+							java -version
+							
+		--after installation compleate :jenkins intall -
+										sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc \
+										https://pkg.jenkins.io/debian-stable/jenkins.io-2026.key
+										echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc]" \
+										https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+										/etc/apt/sources.list.d/jenkins.list > /dev/null
+									sudo apt update
+									sudo apt install jenkins
+
+verify jenkins install or not :
+								$systemctl status jenkins
+				once jenkins setup runing :
+Link :
+					http://localhost:8080/  or server public ip address :8080
+					
+					Unlock jenkins page come ask password
+					--get password {copy below path and paste in server terminal
+						--sudo su - jenkins
+							--cat /var/lib/jenkins/secrets/initialAdminPassword  
+							30361369c1f44d7e9e665a8651fc1604
+					jenkin url :
+                      http://34.41.179.253:8080/
+							http://34.41.179.253:8080/
