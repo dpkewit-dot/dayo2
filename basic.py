@@ -5,8 +5,8 @@ height = 5.9
 is_student = True
 
 print(name, age, height, is_student)
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
+a = 20
+b = 10
 
 print("Addition:", a + b)
 print("Subtraction:", a - b)
